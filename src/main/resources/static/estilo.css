@@ -1,0 +1,15 @@
+
+body{
+  background: #acefbf;
+  background: linear-gradient(to left, #e89595, #a4eea9);
+}
+
+.bg{
+  background-image: url(img/sandia.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.oculto {
+color: #ffa751;
+}
