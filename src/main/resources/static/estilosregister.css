@@ -1,0 +1,14 @@
+body{
+    background: #e89595;
+    background: linear-gradient(to left, #a4eea9, #e89595);
+}
+
+.bg{
+    background-image: url(../static/img/sandisonrisa.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.oculto {
+    color: #ffa751;
+}

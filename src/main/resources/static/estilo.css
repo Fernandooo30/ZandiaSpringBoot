@@ -5,7 +5,7 @@ body{
 }
 
 .bg{
-  background-image: url(img/sandia.png);
+  background-image: url(../static/img/sandia.png);
   background-position: center center;
   background-size: cover;
 }
