@@ -9,11 +9,10 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "api/v1/clientes")
-
+@CrossOrigin(origins = "http://localhost:3000")
 public class ClienteControlador {
 
     @Autowired
-
     private ClienteServicio clienteServicio;
 
     @GetMapping
@@ -22,7 +21,7 @@ public class ClienteControlador {
     }
 
     @GetMapping("/{clienteId}")
-    public Optional<Cliente> getBId(@PathVariable("clienteId")Long clienteId) {
+    public Optional<Cliente> getById(@PathVariable("clienteId") Long clienteId) {
         return clienteServicio.getCliente(clienteId);
     }
 
@@ -32,27 +31,7 @@ public class ClienteControlador {
     }
 
     @DeleteMapping("/{clienteId}")
-    public void saveUpdate(@PathVariable ("clienteId") Long clienteId) {
+    public void delete(@PathVariable("clienteId") Long clienteId) {
         clienteServicio.delete(clienteId);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
